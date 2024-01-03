@@ -10,7 +10,6 @@ public class charExample {
 		char c4 = '가';
 		char c5 = 44032;
 		char c6 = '\uac00';
-		char c7 = '다';
 		
 		System.out.println(c1);
 		System.out.println(c2);
@@ -18,7 +17,6 @@ public class charExample {
 		System.out.println(c4);
 		System.out.println(c5);
 		System.out.println(c6);
-		System.out.println(c7);
 	}
 
 }
