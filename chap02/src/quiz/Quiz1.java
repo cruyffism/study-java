@@ -33,6 +33,7 @@
 			System.out.println("덧셈 결과:" + result);
 			
 			scanner.close();
+		
 	
 		}
 	
