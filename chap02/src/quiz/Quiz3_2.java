@@ -20,6 +20,23 @@ public class Quiz3_2 {
 		System.out.println("--------------------------");
 		
 		System.out.println("사다리꼴의 넓이: " + (x+y)*z/2.0 );
+		
+		
+		/*
+		  Scanner sc = new Scanner(System.in);
+
+		System.out.print("윗변 : ");
+		double lengthTop = sc.nextDouble();
+		System.out.print("아랫변 : ");
+		double lengthBottom =sc.nextDouble();
+		System.out.print("높이 : ");
+		double height = sc.nextDouble();
+		double result = (lengthTop + lengthBottom) * height / 2.0;
+		
+		System.out.println("--------------");
+		System.out.println("사다리꼴의 넓이 : " + result);
+		  
+		 */
 
 	}
 
