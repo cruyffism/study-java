@@ -1,4 +1,4 @@
-package sec02.exam02;
+package sec02.exam;
 
 public class BooleanExample {
 
