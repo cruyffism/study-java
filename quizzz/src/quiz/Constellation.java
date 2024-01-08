@@ -15,13 +15,6 @@ public class Constellation {
 
 		switch (month) {
 
-//		case 1 : if (date <20) {
-//			     System.out.println("염소자리");
-//				}
-//			     else
-//			     System.out.println("물병자리");
-//				break;	
-
 		case 1:
 			if (date < 20) {
 				System.out.println("염소자리");
