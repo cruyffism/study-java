@@ -20,7 +20,7 @@ public class ArrayVariableEx2 {
 			{
 				break;
 			}
-			cnt++;
+			cnt++; // arr[i]에 정수가 계속 입력 될 때 값이 올라가다가 0이 입력되어서 break되면 멈춤   
 		}
 		
 		for( i=cnt-1; i>=0; i--) {      //출력
