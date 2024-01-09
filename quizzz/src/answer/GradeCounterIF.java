@@ -2,7 +2,7 @@ package answer;
 
 import java.util.Scanner;
 
-public class GradeCounter_if {
+public class GradeCounterIF {
 
 	public static void main(String[] args) {
 		Scanner scan = new Scanner(System.in);
@@ -20,7 +20,7 @@ public class GradeCounter_if {
 	            System.out.println("미");
 	        } else if(score >= 60) {
 	            System.out.println("양");
-	        } else {
+	        } else if(score >= 0) {
 	            System.out.println("가");    
 	        }
 	        
@@ -29,4 +29,3 @@ public class GradeCounter_if {
 	}
 
 }
-
