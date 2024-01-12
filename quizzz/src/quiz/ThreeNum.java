@@ -17,6 +17,7 @@ public class ThreeNum {
 					break;
 				}
 			}
+			
 		}
 	}
 
