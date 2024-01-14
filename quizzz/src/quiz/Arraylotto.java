@@ -4,7 +4,7 @@ package quiz;
 public class Arraylotto {
 	
 	public static void main(String[] args) {
-        int[] lotto = new int[45];
+        int[] lotto = new int[6];
         for (int i = 0; i < 6; i++) {
             lotto[i] = (int) (Math.random() * 45) + 1;
             for (int j = 0; j < i; j++) {
@@ -15,7 +15,7 @@ public class Arraylotto {
             }
         }
         for (int i = 0; i < 6; i++) {  // 위에서 값 도출 후 로또 번호 6개 출력 
-            System.out.println(lotto[i] + " ");
+            System.out.print(lotto[i] + " ");
         }
     }
 }

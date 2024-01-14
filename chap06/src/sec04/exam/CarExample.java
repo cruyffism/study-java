@@ -3,7 +3,7 @@ package sec04.exam;
 public class CarExample {
 
 	public static void main(String[] args) {
-		Car myCar = new Car();
+		Car myCar = new Car(); //객체생성 or 클래스를 가져다 씀
 		
 		myCar.setGas(5); //Car의 setGas() 메소드 호출
 		
@@ -14,6 +14,7 @@ public class CarExample {
 			System.out.println("출발합니다.");
 			myCar.run(); //Car의 run() 메소드 호출
 		}
+		
 		if(myCar.isLeftGas()) { //Car의 isLeftGas() 메소드 호출
 			System.out.println("gas를 주입할 필요가 없습니다.");
 		} else {

@@ -9,7 +9,7 @@ public class Korean {
 	//생성자
 	public Korean(String name, String s){
 		this.name = name;
-		ssn = s;
+		 ssn = s;
 		
 	}
 }

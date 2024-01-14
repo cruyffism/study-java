@@ -2,7 +2,7 @@ package sec04.exam;
 
 public class ComputerEx {
 	public static void main(String[] args) {
-		Computer myCom = new Computer();
+		Computer myCom = new Computer(); //객체 생성
 		
 		int [] values1 = {1, 2, 3};
 		int result1 = myCom.sum1(values1);

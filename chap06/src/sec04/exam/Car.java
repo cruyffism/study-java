@@ -10,6 +10,7 @@ public class Car {
 	void setGas(int gas) {
 		this.gas = gas;
 	}
+	
 	boolean isLeftGas() {
 		if(gas==0) {
 			System.out.println("gas가 없습니다.");
@@ -18,6 +19,7 @@ public class Car {
 		System.out.println("gas가 있습니다.");
 		return true;
 	}
+	
 	void run() {
 		while(true) {
 			if(gas>0) {
