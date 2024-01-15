@@ -4,8 +4,8 @@ import java.util.Scanner;
 
 public class BankBookEx {
 	public static void main(String[] args) {
-		BankBook bank = new BankBook();
 		Scanner scan = new Scanner(System.in);
+		BankBook bank = new BankBook();
 		System.out.println("현재 잔액은 : " + 0);
 		
 
