@@ -6,7 +6,7 @@ public class MemberServiceEx {
 	
 	public static void main(String[] args) {
 		
-		MemberService memberService = new MemberService();
+		MemberService memberService = new MemberService(); // 변수명 선언
 		
 		Scanner scan = new Scanner(System.in);
 		System.out.println("아이디를 입력해주세요");
