@@ -27,7 +27,7 @@ public class GugudanTwoNum {
 			dan[1] = num2;
 		}
 		
-		for(int i=0; i<dan.length; i++) {
+		for(int i=0; i<dan.length; i++) { //출력 메소드
 			for(int j=1; j<10; j++) {
 				System.out.println(dan[i] + "X" + j + "= " + dan[i]*j); 
 			}
