@@ -4,6 +4,8 @@ import java.util.Scanner;
 
 public class Grade {
 	
+	//private >> get set 사용하는것도 해보기
+	
 	private int math;
 	private int sci;
 	private int eng;
