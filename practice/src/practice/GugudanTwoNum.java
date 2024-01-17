@@ -5,10 +5,10 @@ import java.util.Scanner;
 public class GugudanTwoNum {
 
 	public static void main(String[] args) {
-		// ì‘ì€ ìˆ˜ë¶€í„° í° ìˆ˜ê¹Œì§€ ì¶œë ¥ ë˜ë„ë¡
+
 
 		Scanner scan = new Scanner(System.in);
-		System.out.println("ë‘ ìˆ˜ë¥¼ ì…ë ¥í•´ë¼");
+		System.out.println("´ÜÀ» ÀÔ·ÂÇÏ¼¼¿ä.");
 		int num1 = scan.nextInt();
 		int num2 = scan.nextInt();
 		
@@ -17,7 +17,7 @@ public class GugudanTwoNum {
 		scan.close();
 	}
 
-	public static void gugudan(int num1, int num2) { // ì •ë ¬ ë©”ì†Œë“œ
+	public static void gugudan(int num1, int num2) { // Á¤·Ä ¸Ş¼Òµå
 		int[] dan = new int[2];
 		if(num1>num2) {
 			dan[0] = num2; 
@@ -27,7 +27,7 @@ public class GugudanTwoNum {
 			dan[1] = num2;
 		}
 		
-		for(int i=0; i<dan.length; i++) { //ì¶œë ¥ ë©”ì†Œë“œ
+		for(int i=0; i<dan.length; i++) { // Ãâ·Â ¸Ş¼Òµå
 			for(int j=1; j<10; j++) {
 				System.out.println(dan[i] + "X" + j + "= " + dan[i]*j); 
 			}
