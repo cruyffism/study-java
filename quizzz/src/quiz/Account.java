@@ -45,7 +45,6 @@ public class Account {
 		this.balance = balance;
 	}
 
-
 	public void menu2() { // 상세 메뉴 호출 메서드
 		System.out.println("업무를 선택하세요.");
 		System.out.println("1. 입금");
@@ -67,6 +66,11 @@ public class Account {
 		} else {
 			balance -= minusCash;
 		}
-		
+
 	}
+
+	public void checkBalance(int balance) { //잔액 조회 메서드 
+		System.out.println("잔액은: " + balance);
+	}
+
 }

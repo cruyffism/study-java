@@ -67,7 +67,7 @@ public class AccountEx {
 					case 3:	
 						System.out.println("잔액을 조회합니다.");
 						cash = Integer.parseInt(scan.nextLine());
-						acc.withdraw(cash);
+						acc.checkBalance(cash);
 						System.out.println(cash + "원 출금 합니다.");
 						System.out.println(" 출금 완료");
 						break;
