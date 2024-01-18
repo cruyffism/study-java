@@ -8,6 +8,6 @@ public static Scanner scan = new Scanner(System.in);
 
 static void main(String[] args) {
 	//로그인 프로그램
-	Controller.init();
+//	Controller.init();
 	}
 }

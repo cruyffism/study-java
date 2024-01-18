@@ -5,7 +5,8 @@ import java.util.Scanner;
 public class LoginSys_View {
 
 	public static LoginSys_Member[] members = new LoginSys_Member[100];
-	
+	public static int memberCount = 0;
+	int menuNum = 0;
 
 	public static int menu(int menuNum) {
 		System.out.println("MIT 사이트에 오신 것을 환영합니다.");
@@ -15,11 +16,6 @@ public class LoginSys_View {
 		System.out.println("3. 프로그램 종료");
 		System.out.println("선택>");
 		return menuNum;
-	}
-	
-	public static void userfault() {
-		System.out.println("잘못 입력했습니다.");
-		System.out.println("다시 확인해주세요.");
 	}
 	
 	public static void signUp() {
@@ -70,7 +66,29 @@ public class LoginSys_View {
 	 }
 	 
 	 public static void deadline() {
-		 if(member)
+		  if (memberCount >= members.length) {
+	            System.out.println("회원가입이 마감되었습니다. 나중에 다시 찾아와 주세요.");
+	        } 
 	 }
+	 
+	 public static void programExit() {
+	        Scanner scan = new Scanner(System.in);
+
+	        System.out.println("종료하시겠습니까? (y/n)");
+	        char choice = scan.next().charAt(0);
+
+	        if (choice == 'y' || choice == 'Y') {
+	            System.out.println("프로그램을 종료합니다.");
+	        } else if (choice == 'n' || choice == 'N') {
+	            System.out.println("종료 취소");
+	        } 
+	        scan.close();
+	    }
+	 
+	 public static void userfault(int menuNum) {
+		    if (!(menuNum == 1 || menuNum == 2 || menuNum == 3)) {
+		        System.out.println("잘못된 입력입니다. 1, 2, 3 중 하나를 선택하세요.");
+		    }
+		}
 	
 }
