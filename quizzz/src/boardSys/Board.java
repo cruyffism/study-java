@@ -52,8 +52,8 @@ public class Board {
 	}
 	
 	void prt() {
-		System.out.println("제목"+ title + "입니다.");
-		System.out.println("작성자"+ writer + "입니다.");
-		System.out.println("내용"+ content + "입니다.");
+		System.out.println("제목"+ this.title + "입니다.");
+		System.out.println("작성자"+ this.writer + "입니다.");
+		System.out.println("내용"+ this.content + "입니다.");
 	}
 }
