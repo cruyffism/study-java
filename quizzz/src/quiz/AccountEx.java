@@ -8,8 +8,9 @@ public class AccountEx {
 		Account acc = new Account();
 		Scanner scan = new Scanner(System.in);
 		boolean run = true;
-		int cash = 0; // 잔액
-
+		boolean run2 = true;
+		int cash = 0; 
+		int balance = 0;
 		while (run) {
 
 			System.out.println("MIT 뱅크에 오신것을 환영합니다.");
@@ -30,7 +31,7 @@ public class AccountEx {
 				int accNumber = Integer.parseInt(scan.nextLine());
 				acc.setAccNumber(accNumber);
 				System.out.println("초기 입금액을 입력하세요.");
-				int balance = Integer.parseInt(scan.nextLine());
+				balance = Integer.parseInt(scan.nextLine());
 				break;
 
 			case 2:
@@ -39,38 +40,40 @@ public class AccountEx {
 
 				if (accNumber2 == acc.getAccNumber()) {
 					System.out.println(acc.name + "님 환영합니다.");
-					
-					acc.menu2();
-					
-					int subNumber = Integer.parseInt(scan.nextLine());
-					
-					switch (subNumber) {
-					
-					case 0:
-						System.out.println("메인메뉴로 돌아갑니다.");
-						break;
-					
-					case 1:
-						System.out.println("입금 금액을 입력하세요.");
-						cash = Integer.parseInt(scan.nextLine());
-						acc.deposit(cash);
-						System.out.println(cash + "원 입금 완료입니다.");
-						System.out.println(" 입금 완료");
-						break;
-					case 2:	
-						System.out.println("출금 금액을 입력하세요.");
-						cash = Integer.parseInt(scan.nextLine());
-						acc.withdraw(cash);
-						System.out.println(cash + "원 출금 합니다.");
-						System.out.println(" 출금 완료");
-						break;
-					case 3:	
-						System.out.println("잔액을 조회합니다.");
-						cash = Integer.parseInt(scan.nextLine());
-						acc.checkBalance(cash);
-						System.out.println(cash + "원 출금 합니다.");
-						System.out.println(" 출금 완료");
-						break;
+					while (run2) {
+						acc.menu2();
+
+						int subNumber = Integer.parseInt(scan.nextLine());
+
+						switch (subNumber) {
+
+						case 0:
+							System.out.println("메인메뉴로 돌아갑니다.");
+							run2 = false;
+							break;
+
+						case 1:
+							System.out.println("입금 금액을 입력하세요.");
+							cash = Integer.parseInt(scan.nextLine());
+							balance += cash;
+							acc.deposit(cash);
+							System.out.println(cash + "원 입금 완료입니다.");
+							System.out.println(" 입금 완료");
+							break;
+						case 2:
+							System.out.println("출금 금액을 입력하세요.");
+							cash = Integer.parseInt(scan.nextLine());
+							balance -= cash;
+							acc.withdraw(cash);
+							System.out.println(cash + "원 출금 합니다.");
+							System.out.println(" 출금 완료");
+							break;
+						case 3:
+							System.out.println("잔액을 조회합니다.");
+							acc.checkBalance(balance);
+							break;
+						}
+
 					}
 				} else {
 					System.out.println("해당 계좌번호를 찾을 수 없습니다.");
