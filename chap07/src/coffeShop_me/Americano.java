@@ -6,4 +6,5 @@ public class Americano extends Product {
 		public Americano(int price) {
 			super(price);
 		}
+		
 }
