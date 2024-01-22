@@ -2,10 +2,10 @@ package casher;
 
 public class CasherDesk {
 	public static void main(String[] args) {
-		Product a = new Tv();
+//		Product a = new Tv();
+//		casher.buy(a);
 		
 		Buyer casher = new Buyer();
-		casher.buy(a);
 		casher.buy(new Audio());
 		casher.buy(new Tv());
 		casher.buy(new Computer());

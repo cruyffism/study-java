@@ -6,9 +6,9 @@ public class scheduler {
 	
 	public static void main(String[] args) {
 		Event[] evt = new Event[3];
-		myDate date1 = new myDate(2021,6,17);		
-		myDate date2 = new myDate(2021,6,04);
-		myDate date3 = new myDate(2021,8,30);
+		MyDate date1 = new MyDate(2021,6,17);		
+		MyDate date2 = new MyDate(2021,6,04);
+		MyDate date3 = new MyDate(2021,8,30);
 		
 		
 		evt[0] = new OneDay("오늘",date1);

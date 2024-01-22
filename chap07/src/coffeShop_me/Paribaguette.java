@@ -13,5 +13,5 @@ public class Paribaguette {
         this.mb = new MoccaBread(mbPrice);
     }
     
-//    Paribaguette paribaguette = new Paribaguette(1000, 1500, 2000);
+    
 }

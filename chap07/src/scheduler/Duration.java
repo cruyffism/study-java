@@ -1,10 +1,11 @@
 package scheduler;
 
 public class Duration extends Event{
-	public myDate begin;
-	public myDate end;
 	
-	public Duration(String title, myDate begin, myDate end) {
+	public MyDate begin;
+	public MyDate end;
+	
+	public Duration(String title, MyDate begin, MyDate end) {
 		super(title);
 		this.begin = begin;
 		this.end = end;

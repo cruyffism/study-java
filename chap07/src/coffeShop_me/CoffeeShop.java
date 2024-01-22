@@ -13,6 +13,6 @@ public class CoffeeShop {
 		this.ca = new Capucchino(caPrice);
 	}
 	
-//	CoffeeShop coffeeShop = new CoffeeShop(1000, 2000, 3000);
+
 	
 }

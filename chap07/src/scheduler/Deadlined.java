@@ -1,9 +1,10 @@
 package scheduler;
 
 public class Deadlined extends Event {
-	public myDate deadline;
 	
-	public Deadlined(String title, myDate deadline) {
+	public MyDate deadline;
+	
+	public Deadlined(String title, MyDate deadline) {
 		super(title);
 		this.deadline = deadline;
 	}
