@@ -1,19 +1,15 @@
 package scheduler;
 
 public class OneDay extends Event {
-	
-	//필드
-	String myDatedate;
-	
-	//생성자
-	public OneDay(String title, MyDate myDate) {
-		super(title); 
-		this.myDatedate = myDate.toString();
-	}
-	
+	public myDate date;
 
-    public String toString() {
-        return title + myDatedate;
-    }
-	
+	public OneDay(String title, myDate date) {
+		// Event Class (부모 클래스)의 생성자 호출
+		super(title);
+		this.date = date;
+	}
+
+	public String toString() {
+		return title + ", " + date.toString();
+	}
 }

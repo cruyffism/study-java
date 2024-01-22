@@ -1,4 +1,4 @@
-package scheduler;
+package scheduler_me;
 
 public class Scheduler {
 	public static void main(String[] args) {
