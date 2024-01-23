@@ -2,6 +2,8 @@ package coffeShop_me;
 
 public class James {
 	
+	
+	
 	//필드
 	int total;
 	Paribaguette[] pb = new Paribaguette[3];
