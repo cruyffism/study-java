@@ -1,20 +1,17 @@
 package sec01.exam;
 
 public class Member {
-	public String id;
+	private String id;
+	private String name;
 	
-	public Member(String id) {
+	public Member(String id, String name) {
 		this.id = id;
+		this.name =name;
 	}
 	
 	@Override 
-	public boolean equals(Object obj) {
-		if(obj instanceof Member) {
-			Member member = (Member) obj;
-			if(id.equals(member.id)) {
-				return true;
-			}
-		}
-		return false;
+	public String toString() {  //toString 재정의
+		return id + ": "+  name;
 	}
+	
 }
