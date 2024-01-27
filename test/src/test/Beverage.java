@@ -1,23 +1,10 @@
 package test;
 
 public abstract class Beverage {
-    private String name; // private으로 변경하여 접근 제한
-    private int price;   // private으로 변경하여 접근 제한
-
-    public Beverage(String name) {
-        this.name = name;
-    }
-
-    // Setter 메소드
-    public void setName(String name) {
-        this.name = name;
-    }
-
-    public void setPrice(int price) {
-        this.price = price;
-    }
-
-    // Getter 메소드
+    private String name; // private으로 변경하여 get과 set만 접근 가능하게..
+    private int price;   // private으로 변경하여 get과 set만 접근 가능하게..
+    
+    // Getter 메소드 and Setter 메소드
     public String getName() {
         return name;
     }
@@ -26,11 +13,22 @@ public abstract class Beverage {
         return price;
     }
 
-    void calcPrice() {
-        // 여기에 가격 계산 로직을 추가
+    public void setName(String name) {
+        this.name = name;
     }
 
-    void print() {
+    public void setPrice(int price) {
+        this.price = price;
+    }
+
+    //생성자 메소드
+    public Beverage(String name) {
+        this.name = name;
+    }
+
+    public abstract void calcPrice();
+
+    public void print() {
         // 여기에 출력 로직을 추가
     }
 }
