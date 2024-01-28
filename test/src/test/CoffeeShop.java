@@ -20,7 +20,7 @@ public class CoffeeShop {
 		System.out.println("5. GinsengTea");
 		System.out.println("6. RedginsengTea");
 
-		// 최대 6잔까지 주문을 받음
+		
 		for (int i = 0; i < orderCount; i++) {
 			System.out.println("주문>>");
 			int choice = Integer.parseInt(scan.nextLine());
@@ -58,6 +58,7 @@ public class CoffeeShop {
 	}
 
 	public static void getSalesInfo() {
+		System.out.println(); // 간격 두기
 		// 주문된 음료 출력
 		for (int i = 0; i < beverages.length; i++) {
 			if (beverages[i] != null) {
@@ -66,8 +67,9 @@ public class CoffeeShop {
 			}
 		}
 	}
-
-	public static void getTotalPrice() {
+	
+	public static void getTotalPrice() { //가격 계산 메소드
+		System.out.println(); // 간격 두기
 		int totalPrice = 0;
 		int coffeeAmount = 0; 
 		int teaAmount = 0; 

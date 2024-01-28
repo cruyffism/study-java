@@ -28,7 +28,7 @@ public abstract class Beverage {
 
     public abstract void calcPrice();
 
-    public void print() {
-        // 여기에 출력 로직을 추가
+    public void print() { // 여기에 출력 로직을 추가
+
     }
 }
