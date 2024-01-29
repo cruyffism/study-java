@@ -26,7 +26,7 @@ public abstract class Beverage {
         this.name = name;
     }
 
-    public abstract void calcPrice();
+    public abstract void calcPrice(); //이 코드는 추상 메소드로, 이 메소드를 포함하는 클래스가 추상 클래스일 것이며, 이 클래스를 상속받는 하위 클래스에서 calcPrice 메소드를 구현해야함
 
     public void print() { // 여기에 출력 로직을 추가
 

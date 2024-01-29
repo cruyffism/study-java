@@ -49,8 +49,8 @@ public class CoffeeShop {
 				System.out.println("잘못된 선택입니다. 다시 선택하세요.");
 				i--; // 잘못된 선택이므로 i를 감소시켜 다시 반복
 			}
-
-			beverages[i].calcPrice();
+ 
+			beverages[i].calcPrice(); //  내가 선택한 커피, 차의 가격을 price라는 변수에 저장하는 메소드
 			System.out.println(beverages[i].getName());
 		}
 		getSalesInfo();
@@ -70,18 +70,18 @@ public class CoffeeShop {
 	
 	public static void getTotalPrice() { //가격 계산 메소드
 		System.out.println(); // 간격 두기
-		int totalPrice = 0;
-		int coffeeAmount = 0; 
-		int teaAmount = 0; 
+		int totalPrice = 0; // 총 가격을 저장할 변수
+		int coffeeAmount = 0; // 판매된 커피의 총 양을 저장할 변수
+		int teaAmount = 0;  // 판매된 차의 총 양을 저장할 변수
 		for (int i = 0; i < orderCount; i++) {
 			totalPrice += beverages[i].getPrice();
 		}
-		System.out.println("총 판매 금액 ==> " + totalPrice);
-		  for (Beverage beverage : beverages) {
-	            if (beverage instanceof Coffee) {
-	            	coffeeAmount += ((Coffee) beverage).getAmount();
-	            } else if (beverage instanceof Tea) {
-	            	teaAmount += ((Tea) beverage).getAmount();
+		System.out.println("총 판매 금액 ==> " + totalPrice); // 총 판매 금액 출력
+		  for (Beverage beverage : beverages) { // 'beverages' 배열의 각 음료를 순회, for-each문 
+	            if (beverage instanceof Coffee) { // 현재 음료가 Coffee의 인스턴스인지 확인
+	            	coffeeAmount += ((Coffee) beverage).getAmount(); // 맞다면, 커피의 양을 전체 커피 양에 더함
+	            } else if (beverage instanceof Tea) { // 현재 음료가 Tea의 인스턴스인지 확인
+	            	teaAmount += ((Tea) beverage).getAmount(); // 맞다면, 차의 양을 전체 차 양에 더함
 	            }
 	        }
 		System.out.println("Coffee의 판매 개수 => " + coffeeAmount +"잔");
